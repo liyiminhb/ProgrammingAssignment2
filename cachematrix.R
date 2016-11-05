@@ -39,8 +39,8 @@ cacheSolve <- function(x, ...) {
     }
     mat<-x$get()
     inv<-solve(mat,...)
-#solve() can got the inverse of the matrix which we created by
-#matrix made function
+##solve() can got the inverse of the matrix which we created by
+##matrix made function
     x$setInverse(inv)
     inv
 }
