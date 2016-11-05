@@ -4,10 +4,10 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-## <<- rebinds an existing name in a parent of the current environment
         inv <- NULL
     set <- function(matrix) {
         x <<- y
+## <<- rebinds an existing name in a parent of the current environment
         inv <<- NULL
     }
     get <- function() {
@@ -38,6 +38,8 @@ cacheSolve <- function(x, ...) {
     }
     mat<-x$get()
     inv<-solve(mat,...)
+## solve() can got the inverse of the matrix which we created by
+## matrix made function
     x$setInverse(inv)
     inv
 }
