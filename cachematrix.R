@@ -4,7 +4,7 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-#
+## <<- rebinds an existing name in a parent of the current environment
         inv <- NULL
     set <- function(matrix) {
         x <<- y
